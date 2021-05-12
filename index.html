@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lugo</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css"><!--FontAwesome-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top" style="background-color: #9726a5;">
+      
+        <a class="navbar-brand  font-weight-bold lu" href="#">lugo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+   
+        <form class="form-inline my-2 my-lg-0" style="margin-left: auto; margin-right:20px">
+            <select class="form-control mr-sm-2 btn-bar " style="color: #3d0b60; width: 200px; margin-right:30px !important" id="usuarioActual" onchange="changeUser();">
+                <option selected class="text-muted  ">Usuarios</option>
+                <option>Pedro Martinez</option>
+                <option>Juan Perez</option>
+                <option>Maria Rodriguez</option>
+            </select>
+            <button class="btn my-2 my-sm-0 btn-ordenes font-weight-bold " style="width:12rem; margin-right: 7rem;" type="button" onClick="verOrdenes();">Ver Ordenes</button>
+        </form>
+    </nav>
+        
+    <div class="titulo-info" id="usuarios">
+        <div class="container-fluid">
+            
+        </div>               
+    </div> 
+  <div class="container">
+    <div class="row" id="categorias">
+        <div class="container-fluid">
+                
+        </div>               
+    </div> 
+
+  </div>
+    *-*-*-
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+</html>

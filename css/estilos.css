@@ -1,0 +1,25 @@
+
+.hi{
+    font-size: 45px;
+    font-weight: bold;    
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.question{
+    font-size: 35px;
+    margin-left: 5rem;
+
+}
+.bg-dark {
+    background-color: #4b0081!important;
+}
+
+.btn-ordenes{
+    border-radius: 5rem;
+    color: #fff;
+    background-color: #3d0b60;
+    border-color: #3d0b60;
+    border: 1px solid transparent;
+    
+}
