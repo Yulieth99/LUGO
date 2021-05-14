@@ -1092,3 +1092,21 @@ var categorias = [
         ]
     }
 ];
+
+function cate() {
+    categorias.forEach(function(items,i) {
+        let cant =Object.keys(items.empresas).length
+            document.getElementById('categorias').innerHTML +=
+                `<div id="box" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                    <div class="card card-style round" style="background-color:${items.color}; height: 12rem; width: 13rem" onClick="showCategory(${i});">
+                        <div class="card-body">
+                        <i class="${items.icono}" style="font-size: 30px;"></i>
+                        <h1 class="card-title">${items.nombreCategoria}</h1>
+                        <h3 class="card-descrip font-weight-lighter">Comercios: ${cant}</h3>
+                        </div>
+                    </div>
+                </div>`
+    });
+}
+
+cate();
