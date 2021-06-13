@@ -1093,6 +1093,29 @@ var categorias = [
     }
 ];
 
+var categories = []
+var localStorage = window.localStorage;
+
+    if(localStorage.getItem('categorias') == null){
+        localStorage.setItem('categorias', JSON.stringify(categories));
+    }else{
+        categories = JSON.parse(localStorage.getItem('categorias'));
+    } 
+
+var users = []
+    if(localStorage.getItem('usuarios') == null){
+        localStorage.setItem('usuarios', JSON.stringify(users));
+    }else{
+        users = JSON.parse(localStorage.getItem('usuarios'));
+    } 
+
+/*var localStorage = window.localStorage;    <-------- local storage categorias
+localStorage.setItem('categorias', JSON.stringify(categorias));*/
+
+/*var localStorage = window.localStorage;    <-------- local storage usuarios
+localStorage.setItem('usuarios', JSON.stringify(usuarios));*/
+
+
 function cate() {
     categorias.forEach(function(items,i) {
         let cant =Object.keys(items.empresas).length
