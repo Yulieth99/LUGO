@@ -1109,12 +1109,6 @@ var users = []
         users = JSON.parse(localStorage.getItem('usuarios'));
     } 
 
-/*var localStorage = window.localStorage;    <-------- local storage categorias
-localStorage.setItem('categorias', JSON.stringify(categorias));*/
-
-/*var localStorage = window.localStorage;    <-------- local storage usuarios
-localStorage.setItem('usuarios', JSON.stringify(usuarios));*/
-
 
 function cate() {
     categorias.forEach(function(items,i) {
