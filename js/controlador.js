@@ -1127,3 +1127,16 @@ function cate() {
 }
 
 cate();
+
+function changeUser(){
+    usuarios.forEach(function(users) {
+        if(users.nombre+" "+users.apellido==$("#usuarioActual").val()) { 
+            document.getElementById('usuarios').innerHTML =
+                `<div>
+                    <h1 class="hi">¡Hola ${users.nombre}!</h1>
+                    <h3 class="question">¿Qué necesitas?</h3>
+                </div>`
+        }
+    });
+}
+
