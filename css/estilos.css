@@ -11,6 +11,33 @@
     margin-left: 5rem;
 
 }
+.btn-ordenes:hover{
+    
+    background-color: #ffffff;
+    color:#3d0b60;
+
+}
+.btn-bar{
+    border-radius: 5rem;
+   width:20px;
+       
+    border-color: #3d0b60;
+    border: 1px solid transparent;
+    
+}
+.titulo-info{
+    padding: 0 60px;
+    color: #3d0b60;
+}
+
+.lu{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left:150px ;
+    padding: 0%;
+    
+}
+ 
 .bg-dark {
     background-color: #4b0081!important;
 }
