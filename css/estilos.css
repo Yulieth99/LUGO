@@ -42,6 +42,101 @@
     background-color: #4b0081!important;
 }
 
+
+.posicion{
+    margin-top: 30px;
+}
+
+.card-style{
+    width: 16rem;
+    height: 16rem; 
+}
+
+#categorias{
+    margin-left: 40px;
+}
+
+#box{
+    margin-top:30px;
+}
+.btn-cerrar {
+    color: #fff;
+    background-color: #3d0b60;
+    border-color: #3d0b60;
+}
+
+.modal-saludo{
+    color: #fff;
+    font-size: 20px;;
+}
+
+#header{
+    background-color: #3d0b60;
+    border-color: #3d0b60;
+}
+
+#headerC{
+    background-color: #3d0b60;
+    border-color: #3d0b60;
+}
+.purpura{
+    color: #5e1592;
+}
+.des{
+    color: rgb(82, 82, 82);
+    font-size: medium;
+   
+}
+#photo {
+    height: 250px;
+    width: 290px;
+    border-radius:25px 25px 0px 0px !important;
+
+ 
+ 
+  }
+  
+  #pa {
+    position: relative;    /* para poder posicionar el texto de forma absoluta */
+    display: inline-block; /* para que solo ocupe el ancho de la imagen */
+    border-radius:5px!important;
+    margin-left: 19%;
+  }
+  
+  .card-title {
+    position: absolute;    /* posición absolute con respecto al padre */
+    bottom: 0;             /* posicionada en la esquina inferior derecha */
+    left: 1rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .card-descrip {
+    position: absolute;    /* posición absolute con respecto al padre */
+    bottom: 0;             /* posicionada en la esquina inferior derecha */
+    left: 1rem;
+    color: white !important;
+  
+    font-size: larger !important;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .round{
+    border-radius:25px !important;
+  }
+ .k{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+ 
+
 .btn-ordenes{
     border-radius: 5rem;
     color: #fff;

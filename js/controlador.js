@@ -1139,4 +1139,68 @@ function changeUser(){
         }
     });
 }
+function verOrdenes(){
+    $('#exampleModal').modal('show')
+    document.getElementById('body').innerHTML = ''; 
+    usuarios.forEach(function(users) {
+        if(users.nombre+" "+users.apellido==$("#usuarioActual").val()) { 
+            document.getElementById('header').innerHTML =
+                `<div>
+                    <h1 class="modal-saludo">${users.nombre}, Estas son tus ordenes</h1>
+                </div>`
+                users.ordenes.forEach(function(ord){
+                    document.getElementById('body').innerHTML +=
+                        `<div>
+                            <div class="card ">
+                                <div class="card-body">
+                                <h5 class="purpura">${ord.nombreProducto}</h5>
+                                <h5 class="des">${ord.descripcion}</h5>
+                                <h5 class="font-weight-bold text-right border-bottom" style="  color: rgb(82, 82, 82);">$ ${ord.precio}</h5>
+                                </div>
+                            </div>
+                        </div>`
+                });
+        }    
+    });
+}
+
+function showCategory(indice){
+    $('#Modal').modal('show')
+    document.getElementById('bodyC').innerHTML = ''; 
+    let items = categorias[indice];
+        document.getElementById('headerC').innerHTML =
+            `<div>
+                <h1 class="modal-saludo">${items.nombreCategoria}</h1>
+            </div>` 
+            items.empresas.forEach(function(emp){
+                document.getElementById('bodyC').innerHTML +=
+                `
+                   
+                <div id="pa" class="">
+                <img id="photo" class="img-fluid card-img" src="${emp.imagen}">
+                <div class="card-title">${emp.nombreEmpresa}</div>
+              </div> 
+                   
+                            
+                 `
+               emp.productos.forEach(function(pro){
+                    document.getElementById('bodyC').innerHTML +=
+                    `
+                    <div>
+                   
+                      <div class="mt-2 mx-2 position-relative">
+            
+                          <h4 class="purpura">${pro.nombreProducto}</h4>
+            
+                        <p class="des">${pro.descripcion}</p>
+                         <h4  class="font-weight-bold text-right border-bottom " style="   font-size: medium; color: rgb(82, 82, 82);">$ ${pro.precio}</h4>
+                  
+                         <button id="products" type="button" class="btn btn-cerrar mb-2 rounded-pill border-bottom " data-dismiss="modal" >Pedir</button>   
+                    </div>           
+            </div> 
+                    
+                    `      
+                });  
+            });          
+}
 
