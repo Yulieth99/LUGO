@@ -1195,7 +1195,7 @@ function showCategory(indice){
                         <p class="des">${pro.descripcion}</p>
                          <h4  class="font-weight-bold text-right border-bottom " style="   font-size: medium; color: rgb(82, 82, 82);">$ ${pro.precio}</h4>
                   
-                         <button id="products" type="button" class="btn btn-cerrar mb-2 rounded-pill border-bottom " data-dismiss="modal" >Pedir</button>   
+                         <button id="products" type="button" class="btn btn-cerrar mb-2 rounded-pill border-bottom ho w-50" data-dismiss="modal" >Pedir</button>   
                     </div>           
             </div> 
                     

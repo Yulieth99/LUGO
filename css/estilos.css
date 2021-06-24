@@ -14,20 +14,22 @@
 .btn-ordenes:hover{
     
     background-color: #ffffff;
-    color:#3d0b60;
+    color:#5d178f;
+    border-color: #3d0b60;
+
 
 }
 .btn-bar{
     border-radius: 5rem;
    width:20px;
        
-    border-color: #3d0b60;
+    border-color: #5d178f;
     border: 1px solid transparent;
     
 }
 .titulo-info{
     padding: 0 60px;
-    color: #3d0b60;
+    color: #5d178f;
 }
 
 .lu{
@@ -39,7 +41,7 @@
 }
  
 .bg-dark {
-    background-color: #4b0081!important;
+    background-color: #5d178f!important;
 }
 
 
@@ -61,8 +63,8 @@
 }
 .btn-cerrar {
     color: #fff;
-    background-color: #3d0b60;
-    border-color: #3d0b60;
+    background-color: #5d178f;
+    border-color: #5d178f;
 }
 
 .modal-saludo{
@@ -143,5 +145,11 @@
     background-color: #3d0b60;
     border-color: #3d0b60;
     border: 1px solid transparent;
-    
+}
+.ho{
+    width: 9rem;
+    margin-left: 15rem;
+
+
+
 }
